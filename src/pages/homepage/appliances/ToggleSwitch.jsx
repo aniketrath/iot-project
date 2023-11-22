@@ -3,7 +3,10 @@ import { Box , Text } from "../../../components/root";
 
 export default function Toggle() {
     const [enabled, setEnabled] = useState(false);
+    //Manage Function for Power Switch
+    function setPower(enabled){
 
+    }
     return (
         <Box>
             <Box horizontal>
@@ -17,6 +20,7 @@ export default function Toggle() {
                     <div
                         onClick={() => {
                             setEnabled(!enabled);
+                            setPower()
                         }}
                         className="w-11 h-6 
                         bg-gray-200 rounded-full peer  
